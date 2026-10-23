@@ -31,6 +31,13 @@ class Product:
     def to_dict(self):
         return {"Product ID": self.__product_id, "Product Name": self.__name, "Price": self.__price, "Stock": self.__stock}
 
+class Inventory:
 
+    def __init__ (self):
+        self.__products = []
+
+    def add_product (self, product):
+        pass
+    
 
 
