@@ -37,7 +37,13 @@ class Inventory:
         self.__products = []
 
     def add_product (self, product):
-        pass
-    
+        for i in self.__products:
+            if i.get_product_id() == product.get_product_id():
+                return False
+
+        self.__products.append(product)
+        return True 
+
+
 
 
