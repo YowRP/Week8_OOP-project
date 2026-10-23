@@ -21,9 +21,10 @@ class Product:
             self.__stock = quantity
             return True
 
+    def display_information (self):
+        print (f"Product ID:  {self.__product_id} | Product Name: {self.__name} | Price: ${self.__price:.2f} | Stock: {self.__stock}")
 
 
-            
 
 
 
