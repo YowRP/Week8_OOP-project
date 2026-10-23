@@ -13,7 +13,19 @@ class Product:
         self.__stock  = stock
 
     def update_stock(self, quantity):
-        pass
-    
+
+        if quantity < 0 :
+            return False
+
+        else:
+            self.__stock = quantity
+            return True
+
+
+
+            
+
+
+
 
 
