@@ -51,6 +51,17 @@ class Inventory:
 
         return None
 
+    def display_all(self):
+        if not self.__products: #Or can add len(self.__products) == 0:
+            print ("The Inventory is empty, please fill in something!")
+            return 
+
+        for i in self.__products:
+            i.display_information()
+            
+
+
+
 
 
 
