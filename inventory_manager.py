@@ -59,7 +59,13 @@ class Inventory:
         for i in self.__products:
             i.display_information()
             
-
+    def get_all_as_dicts(self):
+        result = []
+        for i in self.__products:
+            result.append(i.to_dict())
+        return result
+    
+    
 
 
 
