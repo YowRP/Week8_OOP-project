@@ -44,6 +44,13 @@ class Inventory:
         self.__products.append(product)
         return True 
 
+    def search_product (self, product_id):
+        for i in self.__products:
+            if i.get_product_id() == product_id:
+                return i
+
+        return None
+
 
 
 
