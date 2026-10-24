@@ -1,0 +1,76 @@
+Date:   Sat Oct 24 11:14:41 2026 +0800
+
+    Option 4 added
+
+commit 13471040b2dafe00445ed0804842597ed16859f9
+Author: YowRP <2604111@sit.singaporetech.edu.sg>
+Date:   Sat Oct 24 11:05:19 2026 +0800
+
+    main def added with option choices (not incl 4)
+
+commit 266a44833b6d6366ef6cb9f58a68639d61d1ac95
+Author: YowRP <2604111@sit.singaporetech.edu.sg>
+Date:   Sat Oct 24 10:44:54 2026 +0800
+
+    load inventory def
+
+commit 27e83555b45db75e3ae4704527a020cc24c6426d
+Author: YowRP <2604111@sit.singaporetech.edu.sg>
+Date:   Sat Oct 24 10:11:53 2026 +0800
+
+    Save Inventory def
+
+commit 76fcc480d9bd2cefb9980705c829e7ea9c5735bf
+Author: YowRP <2604111@sit.singaporetech.edu.sg>
+Date:   Fri Oct 23 23:37:49 2026 +0800
+
+    get_all_as_dicts def
+
+commit a3e5f9ca7aee68c3ee88cc017724d81bc90cc8ff
+Author: YowRP <2604111@sit.singaporetech.edu.sg>
+Date:   Fri Oct 23 23:27:39 2026 +0800
+
+    display all def
+
+commit f35c6f76c5b0aa91320d73ee9fe36d56e453174c
+Author: YowRP <2604111@sit.singaporetech.edu.sg>
+Date:   Fri Oct 23 23:13:36 2026 +0800
+
+    serach product def
+
+commit e58d5b2476b04d3edbb265abb1d3bd0ccfdc1a07
+Author: YowRP <2604111@sit.singaporetech.edu.sg>
+Date:   Fri Oct 23 23:04:30 2026 +0800
+
+    add product def
+
+commit 14bc7f20da01cd0307692ae2c6d37f2291f80a9d
+Author: YowRP <2604111@sit.singaporetech.edu.sg>
+Date:   Fri Oct 23 22:24:44 2026 +0800
+
+    class Inventory created
+
+commit 0172528c02073f91001a395c875b3aef827fda7f
+Author: YowRP <2604111@sit.singaporetech.edu.sg>
+Date:   Fri Oct 23 22:19:41 2026 +0800
+
+    Dictionary + get product ID def
+
+commit f71bb2702a759cf248c5117d37682c9663289bfe
+Author: YowRP <2604111@sit.singaporetech.edu.sg>
+Date:   Fri Oct 23 22:03:23 2026 +0800
+
+    display information def
+    display information def
+
+commit 5ab78a76e287ab821cc09ef145353c94d96fe176
+Author: YowRP <2604111@sit.singaporetech.edu.sg>
+Date:   Fri Oct 23 21:38:17 2026 +0800
+
+    Update Stock def done
+
+commit 6e62c4eff8bdd1f0d05bee94dc4903a8e571669e
+Author: YowRP <2604111@sit.singaporetech.edu.sg>
+Date:   Fri Oct 23 21:16:21 2026 +0800
+
+    created classes
