@@ -64,6 +64,11 @@ class Inventory:
         for i in self.__products:
             result.append(i.to_dict())
         return result
+
+def save_inventory (inventory):
+    with open (INVENTORY_FILE, "w") as f:
+        json.dump(inventory.get_all_as_dicts(), f, indent = 4)
+
     
     
 
