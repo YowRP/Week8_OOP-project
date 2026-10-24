@@ -101,7 +101,7 @@ def main():
 
         elif choice == "2":
             product_id = input("Enter Product ID: ").strip()
-            name = input("Enter Product Nmae: ").strip()
+            name = input("Enter Product Name: ").strip()
             try:
                 price = float(input("Enter the price of the product: ").strip())
                 stock = int(input("Enter the stock amount of the product: ").strip())
@@ -137,8 +137,12 @@ def main():
                 print("Stock cannot be negative. Stock not updated.")
 
         elif choice == "4":
-            pass
-
+            product_id = input("Enter Product ID: ").strip()
+            product = inventory.search_product(product_id)
+            if product is None:
+                print("Product not found")
+            else:
+                product.display_information()
 
 
         elif choice == "5":
