@@ -69,6 +69,21 @@ def save_inventory (inventory):
     with open (INVENTORY_FILE, "w") as f:
         json.dump(inventory.get_all_as_dicts(), f, indent = 4)
 
+def load_inventory ():
+    inventory = Inventory ()
+    if os.path.exists(INVENTORY_FILE):
+        print("Inventory.json Found")
+        with open (INVENTORY_FILE, "r") as f:
+            data = json.load(f)
+            for i in data:
+                product = Product(i["Product ID"], i["Product Name"], i["Price"], i["Stock"])
+                inventory.add_product(product)
+    else:
+        print("Inventory not found.")
+
+    return inventory
+
+
     
     
 
