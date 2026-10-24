@@ -83,7 +83,79 @@ def load_inventory ():
 
     return inventory
 
+def main():
+    inventory = load_inventory()
 
+    while True:
+        print("----------- MENU -----------")
+        print("1. Display All Products")
+        print("2. Add Product")
+        print("3. Update Stock")
+        print("4. Search Product")
+        print("5. Save Inventory")
+        print("6. Exit")
+        choice = input("Enter option: ").strip()
+
+        if choice == "1":
+            inventory.display_all()
+
+        elif choice == "2":
+            product_id = input("Enter Product ID: ").strip()
+            name = input("Enter Product Nmae: ").strip()
+            try:
+                price = float(input("Enter the price of the product: ").strip())
+                stock = int(input("Enter the stock amount of the product: ").strip())
+            except ValueError:
+                print("Invalid input, Product not added.")
+                continue
+
+            product = Product(product_id , name, price, stock)
+            if inventory.add_product(product):
+                print("Product added succesfully!")
+
+            else:
+                print("Product already exists.")
+
+        elif choice == "3":
+            product_id = input("Enter Product ID: ").strip()
+            product = inventory.search_product(product_id)
+            if product is None:
+                print("Product not found")
+                continue
+
+            try:
+                new_stock = int(input("Enter the new stock quantity: ").strip())
+
+            except ValueError:
+                print("Invalid value. Stock not updated.")
+                continue
+
+            if product.update_stock(new_stock):
+                print("Stock updated sucessfully.")
+
+            else:
+                print("Stock cannot be negative. Stock not updated.")
+
+        elif choice == "4":
+            pass
+
+
+
+        elif choice == "5":
+            save_inventory(inventory)
+            print("Inventory Saved")
+
+        elif choice == "6":
+            save_inventory(inventory)
+            print("Inventory saved")
+            print("Thank you for your use!")
+            break
+
+        else:
+            print("Invalid option.")
+
+if __name__ == "__main__":
+    main()
     
     
 
